@@ -14,8 +14,8 @@
 		1A74FB8B1C00182F00FF195F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A74FB891C00182F00FF195F /* LaunchScreen.storyboard */; };
 		1A74FB961C00183000FF195F /* Muse_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A74FB951C00183000FF195F /* Muse_TestTests.swift */; };
 		1A74FBA11C00183000FF195F /* Muse_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A74FBA01C00183000FF195F /* Muse_TestUITests.swift */; };
-		1A74FBAF1C001A0F00FF195F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A74FBAE1C001A0F00FF195F /* Result.swift */; settings = {ASSET_TAGS = (); }; };
-		1A74FBB11C002BA800FF195F /* ThesaurusWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A74FBB01C002BA800FF195F /* ThesaurusWords.swift */; settings = {ASSET_TAGS = (); }; };
+		1A74FBAF1C001A0F00FF195F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A74FBAE1C001A0F00FF195F /* Result.swift */; };
+		1A74FBB11C002BA800FF195F /* ThesaurusWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A74FBB01C002BA800FF195F /* ThesaurusWords.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,19 +193,22 @@
 		1A74FB751C00182F00FF195F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Aaron Motayne";
 				TargetAttributes = {
 					1A74FB7C1C00182F00FF195F = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = 22ZGT27U85;
+						LastSwiftMigration = 0820;
 					};
 					1A74FB901C00183000FF195F = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 1A74FB7C1C00182F00FF195F;
 					};
 					1A74FB9B1C00183000FF195F = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 1A74FB7C1C00182F00FF195F;
 					};
 				};
@@ -333,8 +336,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -378,8 +383,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -398,6 +405,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -409,9 +417,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Muse Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.motayne.aaron.Muse-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -421,9 +431,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Muse Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.motayne.aaron.Muse-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -435,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.motayne.aaron.Muse-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muse Test.app/Muse Test";
 			};
 			name = Debug;
@@ -447,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.motayne.aaron.Muse-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muse Test.app/Muse Test";
 			};
 			name = Release;
@@ -458,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.motayne.aaron.Muse-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Muse Test";
 				USES_XCTRUNNER = YES;
 			};
@@ -470,6 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.motayne.aaron.Muse-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Muse Test";
 				USES_XCTRUNNER = YES;
 			};
@@ -494,6 +510,7 @@
 				1A74FBA71C00183000FF195F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A74FBA81C00183000FF195F /* Build configuration list for PBXNativeTarget "Muse TestTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +519,7 @@
 				1A74FBAA1C00183000FF195F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A74FBAB1C00183000FF195F /* Build configuration list for PBXNativeTarget "Muse TestUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +528,7 @@
 				1A74FBAD1C00183000FF195F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

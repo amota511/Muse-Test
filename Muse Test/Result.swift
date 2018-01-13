@@ -26,8 +26,8 @@ class Result : UIViewController  {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func dismissResultView(sender: UIButton) {
-        dismissViewControllerAnimated(false, completion: nil)
+    @IBAction func dismissResultView(_ sender: UIButton) {
+        dismiss(animated: false, completion: nil)
     }
     
 }
